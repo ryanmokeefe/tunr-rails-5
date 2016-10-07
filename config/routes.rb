@@ -1,3 +1,9 @@
 Rails.application.routes.draw do
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
+  get    '/artists'           => 'artists#index'
+  get    '/artists/new'       => 'artists#new'
+  get    '/artists/:id'       => 'artists#show'
+  post   '/artists'           => 'artists#create'
+  get    '/artists/:id/edit'  => 'artists#edit'
+  put    '/artists/:id'       => 'artists#update'
+  delete '/artists/:id'       => 'artists#destroy'
 end
