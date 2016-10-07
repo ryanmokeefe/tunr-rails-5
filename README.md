@@ -1,24 +1,15 @@
-# README
+# Tunr Rails 5
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+To get started clone down the application, then follow set up instructions.
 
-Things you may want to cover:
+## Setup
 
-* Ruby version
+```bash
+$ bundle install
+$ rails db:create
+$ rails db:migrate
+$ rails db:seed
+$ rails s
+```
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+If setup was successful, should be able to view app in browser on `localhost:3000`
