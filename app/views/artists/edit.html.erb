@@ -1,0 +1,19 @@
+<h2> Edit Artist </h2>
+
+<%= form_for @artist, url: "/artists/#{@artist.id}", method: :put do |f| %>
+    <%= f.label :name %>
+    <%= f.text_field :name %>
+
+    <%= f.label :nationality %>
+    <%= f.text_field :nationality %>
+
+    <%= f.label :photo_url %>
+    <%= f.text_field :photo_url %>
+
+    <%= f.submit "Update" %>
+    
+<% end %>
+
+<%= form_for @artist, url: "/artists/#{@artist.id}", method: :delete do |f| %>
+        <% f.submit "Delete" %>
+<% end %>
